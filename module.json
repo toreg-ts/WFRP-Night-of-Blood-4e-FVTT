@@ -2,7 +2,7 @@
   "name": "wfrp4e-night-of-blood",
   "title": "WFRP4e - Night of Blood (WFRP 4e)",
   "description": "The classic Warhammer Fantasy Roleplay adventure, perfect for introducing new players. Now updated to include multi-level scenes",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "authors": [
     {
       "name": "Stuart Kerrigan"
@@ -82,9 +82,7 @@
       "wfrp4e-night-of-blood.NightOfBloodJournal"
     ]
   },
-  "languages": [
-    "en"
-  ],
+  "languages": [],
   "minimumCoreVersion": 10,
   "compatibleCoreVersion": 10,
   "compatibility": {
