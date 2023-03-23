@@ -1,9 +1,22 @@
 {
   "name": "wfrp4e-night-of-blood",
-  "title": "Night of Blood (WFRP 4e)",
+  "title": "WFRP4e - Night of Blood (WFRP 4e)",
   "description": "The classic Warhammer Fantasy Roleplay adventure, perfect for introducing new players. Now updated to include multi-level scenes",
-  "version": "3.0",
-  "author": "Stuart Kerrigan",
+  "version": "3.0.1",
+  "authors": [
+    {
+      "name": "Stuart Kerrigan"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
+      }
+    ]
+  },
   "dependencies": [
     {
       "name": "lib-wrapper"
@@ -27,23 +40,18 @@
       "name": "tokenmagic"
     }
   ],
-  "esmodules": [],
   "scripts": [
     "init.js"
   ],
-  "systems": [
-    "wfrp4e"
-  ],
-  "styles": [
-    "./styles.css"
-  ],
+  "styles": [],
   "packs": [
     {
       "label": "Night of Blood Actors",
       "type": "Actor",
       "name": "NightOfBloodActors",
       "path": "./packs/night-of-blood-actors.db",
-      "package": "wfrp4e-night-of-blood"
+      "package": "wfrp4e-night-of-blood",
+      "system": "wfrp4e"
     },
     {
       "label": "Night of Blood Scenes",
@@ -68,13 +76,23 @@
     }
   ],
   "flags": {
-    "initializationPacks": ["wfrp4e-night-of-blood.NightOfBloodActors", "wfrp4e-night-of-blood.NightOfBloodScenes", "wfrp4e-night-of-blood.NightOfBloodJournal"]
+    "initializationPacks": [
+      "wfrp4e-night-of-blood.NightOfBloodActors",
+      "wfrp4e-night-of-blood.NightOfBloodScenes",
+      "wfrp4e-night-of-blood.NightOfBloodJournal"
+    ]
   },
   "languages": [
     "en"
   ],
-  "minimumCoreVersion": "0.9",
-  "manifest": "https://raw.githubusercontent.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/master/module.json",
-  "download": "https://github.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
-  "url": "https://github.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/"
+  "minimumCoreVersion": 10,
+  "compatibleCoreVersion": 10,
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10,
+    "maximum": 10
+  },
+  "manifest": "https://raw.githubusercontent.com/ZigmundKreud/WFRP-Night-of-Blood-4e-FVTT/master/module.json",
+  "download": "https://github.com/ZigmundKreud/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
+  "url": "https://github.com/ZigmundKreud/WFRP-Night-of-Blood-4e-FVTT/"
 }
