@@ -87,8 +87,8 @@
   "compatibleCoreVersion": 10,
   "compatibility": {
     "minimum": 10,
-    "verified": 10,
-    "maximum": 10
+    "verified": 11,
+    "maximum": 11
   },
   "manifest": "https://raw.githubusercontent.com/ZigmundKreud/WFRP-Night-of-Blood-4e-FVTT/master/module.json",
   "download": "https://github.com/ZigmundKreud/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
